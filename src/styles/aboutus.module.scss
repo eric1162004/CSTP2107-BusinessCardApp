@@ -36,9 +36,6 @@
   padding-left: 10px; 
 }
 .wrapper img{
-  background-color: $secondary-color;
-  border: solid;
-  border-color: $primary-color;
   filter: drop-shadow(4px 4px 4px gray);
  // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -198,7 +195,6 @@
 }
 .cards img{
   padding-top:9% ;
-  height: 100px;
   width: 100px;
 }
 

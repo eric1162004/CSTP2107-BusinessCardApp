@@ -70,7 +70,7 @@ const AboutUs = () => {
                 <div className={styles.car}>
                   <img src="/assets/v3.png"/>
                   <h1>Community Involvement</h1>
-                  <p>We believe in an obligation to give back through dedicatoin of time and leadership by our associated within their communities.</p>
+                  <p>We believe in an obligation to give back through dedication of time and leadership by our associated within their communities.</p>
                 </div>
               </div>
             </div>
@@ -80,25 +80,21 @@ const AboutUs = () => {
           <div className={styles.profile}>
             <img className={styles.profileimg} src="/assets/img1.jpg"/>
             <h3 className={styles.username}>Michael Kashkov</h3>
-            <h5>Team Member</h5>
           </div>
 
           <div className={styles.profile}>
             <img className={styles.profileimg} src="/assets/img2.jpg"/>
-            <h3 className={styles.username}>Eric</h3>
-            <h5>Team Member</h5>
+            <h3 className={styles.username}>Eric Cheung</h3>
           </div>
 
           <div className={styles.profile}>
             <img className={styles.profileimg} src="/assets/img3.jpg"/>
             <h3 className={styles.username}>Pokai Huang</h3>
-            <h5>Team Member</h5>
           </div>
 
           <div className={styles.profile}>
             <img className={styles.profileimg} src="/assets/img4.jpg"/>
-            <h3 className={styles.username}>Karla</h3>
-            <h5>Team Member</h5>
+            <h3 className={styles.username}>Karla Barerra</h3>
           </div>
         </div>
       </div>
@@ -107,24 +103,20 @@ const AboutUs = () => {
         <div className={styles.profile}>
             <img className={styles.profileimg} src="/assets/img5.jpg"/>
             <h3 className={styles.username}>Harleen Jhamat</h3>
-            <h5>Team Member</h5>
           </div>
     
           <div className={styles.profile}>
             <img className={styles.profileimg} src="/assets/img6.jpg"/>
-            <h3 className={styles.username}>Rayyan</h3>
-            <h5>Team Member</h5>
+            <h3 className={styles.username}>Rayyan Haroon</h3>
           </div>
 
           <div className={styles.profile}>
             <img className={styles.profileimg} src="/assets/img7.jpg"/>
-            <h3 className={styles.username}>Ian</h3>
-            <h5>Team Member</h5>
+            <h3 className={styles.username}>Ian McConaghy</h3>
           </div>
           <div className={styles.profile}>
             <img className={styles.profileimg} src="/assets/img8.jpg"/>
             <h3 className={styles.username}>Jaisika Singh</h3>
-            <h5>Team Member</h5>
           </div>
         </div>
       </div>
