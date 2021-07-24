@@ -365,7 +365,7 @@ function CustomCard(props) {
           onClick={handleAddText}
           onTouchStart={handleAddText}
           id="CanvasDiv"
-          tabIndex="0"
+          tabIndex={0}
         >
           <canvas
             className={styles.card_canvas}
