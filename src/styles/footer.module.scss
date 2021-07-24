@@ -1,0 +1,42 @@
+$primary_color: #3D758A;
+$secondary_color: #D9D7BA;
+$tertiary_color: #D9D0D2;
+$quaternary_color:#ADCDD9;
+$quinary_color: #8C797D;
+$text_color: #000000;
+$ivory:#f1f8f0;
+$white: #fff;
+$grey: #eeeeee;
+$google-blue: #4285f4;
+$button_on_hover: lighten($primary_color, 5%);
+$button-active-blue: #BADFE7;
+$border_color: rgba(0, 0, 0, 0.274);
+$light_grey: rgba(0, 0, 0, 0.342);
+$light_shade: rgba(32, 32, 32, 0.288);
+$danger: rgb(187, 8, 8);
+.contact {
+    background: $primary_color;
+    padding: 1% 0;
+    text-align: center;
+}
+
+.contactText {
+    letter-spacing: 1px;
+    font-style: italic;
+    padding-top: 10px;
+    color: $ivory;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
+.footer {
+    padding: 1% 0;
+    font-size: small;
+    background-color: $primary_color;
+    text-align: center;
+}
+
+.footerText {
+    color: $ivory;
+}

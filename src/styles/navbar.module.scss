@@ -1,0 +1,79 @@
+$primary_color: #3D758A;
+$secondary_color: #D9D7BA;
+$tertiary_color: #D9D0D2;
+$quaternary_color:#ADCDD9;
+$quinary_color: #8C797D;
+$text_color: #000000;
+$ivory:#f1f8f0;
+$white: #fff;
+$grey: #eeeeee;
+$google-blue: #4285f4;
+$button_on_hover: lighten($primary_color, 5%);
+$button-active-blue: #BADFE7;
+$border_color: rgba(0, 0, 0, 0.274);
+$light_grey: rgba(0, 0, 0, 0.342);
+$light_shade: rgba(32, 32, 32, 0.288);
+$danger: rgb(187, 8, 8);
+.navbar {
+    background-color: $primary_color;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    padding: 2px 2px;
+}
+
+.navbarContact {
+    font-size: 19px;
+    padding: 12px;
+    color: $white;
+    font-weight: normal;
+    letter-spacing: 1.6px;
+}
+
+.navbarContact:hover {
+    color: $tertiary_color;
+}
+
+.navbarContact:active {
+    color: $ivory;
+}
+
+.button {
+    font-size: medium;
+    letter-spacing: 1px;
+    opacity: .9;
+    margin: 10px;
+    margin-top: 10px;
+    background-color: $white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 45px;
+    transition: ease-in 0.05s;
+}
+
+.button:hover {
+    color: $white;
+    background-color: $button_on_hover;
+}
+
+.button:active {
+    color: $text_color;
+    background-color: $button-active-blue;
+    transform: translateY(3px);
+}
+
+.userNameText {
+    display: inline;
+    margin: 0;
+    color: $ivory;
+    font-size: 15px;
+    letter-spacing: 1%;
+    padding-right: .5%;
+}
+
+.thumbnail {
+    border: 2px solid $secondary_color;
+    border-radius: 5%;
+}

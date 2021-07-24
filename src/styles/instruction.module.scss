@@ -1,0 +1,42 @@
+$primary_color: #3D758A;
+$secondary_color: #D9D7BA;
+$tertiary_color: #D9D0D2;
+$quaternary_color:#ADCDD9;
+$quinary_color: #8C797D;
+$text_color: #000000;
+$ivory:#f1f8f0;
+$white: #fff;
+$grey: #eeeeee;
+$google-blue: #4285f4;
+$button_on_hover: lighten($primary_color, 5%);
+$button-active-blue: #BADFE7;
+$border_color: rgba(0, 0, 0, 0.274);
+$light_grey: rgba(0, 0, 0, 0.342);
+$light_shade: rgba(32, 32, 32, 0.288);
+$danger: rgb(187, 8, 8);
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 4%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: justify;
+    display: flex;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        letter-spacing: 3px;
+        font-weight: lighter;
+        font-style: italic;
+    }
+    p {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+    h1 {
+        text-align: center;
+    }
+}

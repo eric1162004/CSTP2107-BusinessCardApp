@@ -1,0 +1,64 @@
+// @import './Colors.scss';
+$primary_color: #3D758A;
+$secondary_color: #D9D7BA;
+$tertiary_color: #D9D0D2;
+$quaternary_color:#ADCDD9;
+$quinary_color: #8C797D;
+$text_color: #000000;
+$ivory:#f1f8f0;
+$white: #fff;
+$grey: #eeeeee;
+$google-blue: #4285f4;
+$button_on_hover: lighten($primary_color, 5%);
+$button-active-blue: #BADFE7;
+$border_color: rgba(0, 0, 0, 0.274);
+$light_grey: rgba(0, 0, 0, 0.342);
+$light_shade: rgba(32, 32, 32, 0.288);
+$danger: rgb(187, 8, 8);
+.head {
+    text-align: center;
+    margin: 20px;
+    font-weight: 900;
+    color: $text_color;
+}
+
+.cblock {
+    justify-content: center;
+    display: flex;
+}
+
+.desc {
+    text-align: center;
+}
+
+.Card1 {
+    margin: 20px;
+    width: 290px;
+    height: 400px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 8, 0.19);
+}
+
+.Card2 {
+    margin: 20px;
+    width: 290px;
+    height: 400px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 8, 0.19);
+}
+
+.Card3 {
+    margin: 20px;
+    width: 290px;
+    height: 400px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 8, 0.19);
+}
+
+.img {
+    border-radius: 50px;
+    box-shadow: 0 0 5px #388087;
+    position: relative;
+    float: right;
+}
+
+.page {
+    background-color: $white;
+}

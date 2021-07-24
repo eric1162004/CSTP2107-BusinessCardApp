@@ -1,0 +1,84 @@
+$primary_color: #3D758A;
+$secondary_color: #D9D7BA;
+$tertiary_color: #D9D0D2;
+$quaternary_color:#ADCDD9;
+$quinary_color : #8C797D;
+$text_color: #000000;
+$ivory:#f1f8f0;
+$white: #fff;
+$grey: #eeeeee;
+$google-blue: #4285f4;
+$button_on_hover: lighten($primary_color, 5%);
+$button-active-blue: #BADFE7;
+$border_color: rgba(0, 0, 0, 0.274);
+$light_grey: rgba(0, 0, 0, 0.342);
+$light_shade: rgba(32, 32, 32, 0.288);
+$danger: rgb(187, 8, 8);
+$small: 500px;
+.container {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    p {
+        font-size: 2.1em;
+        font-style: italic;
+        letter-spacing: 4px;
+        margin: 0;
+    }
+    h1 {
+        font-size: 3em;
+    }
+}
+
+.banner {
+    background-color: white;
+    margin: 2% 2%;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    @media screen and (max-width: $small) {
+        width: 80%;
+        margin: 6% 2%;
+    }
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2),
+    0 8px 20px 0 rgba(0, 0, 8, 0.19);
+    animation-name: ease-in-shadow;
+    animation-duration: 4s;
+}
+
+@keyframes ease-in-shadow {
+    from {
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 8, 0.19);
+    }
+    to {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 8, 0.19);
+    }
+}
+
+.getStartBtn {
+    width: 300px;
+    height: 60px;
+    background-color: lighten(complement($primary_color), 5%);
+    color: $white;
+    font-size: 2em;
+    //font-style: italic;
+    margin-bottom: 4%;
+    letter-spacing: 1.1px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 8, 0.19);
+    @media screen and (max-width: $small) {
+        margin-bottom: 5%;
+    }
+    &:hover {
+        background-color: darken(complement($primary_color), 5%);
+        color: $white;
+    }
+}

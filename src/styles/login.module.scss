@@ -1,0 +1,62 @@
+$primary_color: #3D758A;
+$secondary_color: #D9D7BA;
+$tertiary_color: #D9D0D2;
+$quaternary_color:#ADCDD9;
+$quinary_color: #8C797D;
+$text_color: #000000;
+$ivory:#f1f8f0;
+$white: #fff;
+$grey: #eeeeee;
+$google-blue: #4285f4;
+$button_on_hover: lighten($primary_color, 5%);
+$button-active-blue: #BADFE7;
+$border_color: rgba(0, 0, 0, 0.274);
+$light_grey: rgba(0, 0, 0, 0.342);
+$light_shade: rgba(32, 32, 32, 0.288);
+$danger: rgb(187, 8, 8);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+.loginContainer {
+    min-height: 58vh;
+}
+
+.googleBtn {
+    color: $ivory;
+    width: 200px;
+    height: 42px;
+    background-color: $google-blue;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .25);
+    margin: 2% auto;
+    .googleIconWrapper {
+        position: absolute;
+        margin-top: 1px;
+        margin-left: 1px;
+        width: 40px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: $white;
+    }
+    .googleIcon {
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 11px;
+        width: 18px;
+        height: 18px;
+    }
+    .btnText {
+        float: right;
+        margin: 11px 13px 0 0;
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 0.9px;
+        font-family: "Roboto";
+    }
+    &:hover {
+        box-shadow: 0 0 6px $google-blue;
+        cursor: pointer;
+    }
+    &:active {
+        background: $button-active-blue;
+    }
+}

@@ -1,0 +1,211 @@
+$primary_color: #3D758A;
+$secondary_color: #D9D7BA;
+$tertiary_color: #D9D0D2;
+$quaternary_color:#ADCDD9;
+$quinary_color : #8C797D;
+$text_color: #000000;
+$ivory:#f1f8f0;
+$white: #fff;
+$grey: #eeeeee;
+$google-blue: #4285f4;
+$button_on_hover: lighten($primary_color, 5%);
+$button-active-blue: #BADFE7;
+$border_color: rgba(0, 0, 0, 0.274);
+$light_grey: rgba(0, 0, 0, 0.342);
+$light_shade: rgba(32, 32, 32, 0.288);
+$danger: rgb(187, 8, 8);
+$small: 450px;
+$medium: 900px;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 3%;
+    }
+    button {
+        border: none;
+        background-color: transparent;
+        border: 2px solid rgba(0, 0, 0, 0.171);
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        font-size: medium;
+        margin: 0 5px;
+        background-color: whitesmoke;
+        i {
+            position: relative;
+            top: 0px;
+            left: 1px;
+        }
+        &:hover {
+            background-color: lighten(complement($primary_color), 10%) !important;
+        }
+    }
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    margin-bottom: 1%;
+    margin-right: 0.25rem;
+}
+
+.horizontalButtonDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50px;
+}
+
+.card_canvas_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+    max-width: 95%;
+    margin-bottom: 20px;
+}
+
+.card_canvas {
+    border: $border_color 1px solid;
+    border-radius: 1%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 8, 0.19);
+}
+
+.customized_card_form {
+    background-color: $grey;
+    width: 450px;
+    @media screen and (max-width: $small) {
+        width: 95%;
+    }
+    border-radius: 1%;
+    border: $border_color 1px solid;
+    padding: 1% 1%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2),
+    0 8px 20px 0 rgba(0, 0, 8, 0.19);
+    text-align: center;
+    label {
+        margin-right: 4%;
+    }
+    display: none;
+    height: 0;
+    opacity: 0;
+    transition: height 0.5s,
+    display 2.2s,
+    opacity 0.2s linear;
+}
+
+.display {
+    display: block;
+    opacity: 1;
+    height: 100%;
+}
+
+// Apply when the icon is in active state
+.toolActive {
+    text-align: center;
+    background-color: complement($quaternary_color) !important;
+    border-radius: 10%;
+    border: 2px solid complement($light_grey) !important;
+    padding: 1%;
+}
+
+.btnActive {
+    background-color: lighten(complement($primary_color), 10%) !important;
+    &:hover {
+        background-color: darken(complement($primary_color), 4%) !important;
+        border: 2px solid darken($light_grey, 4%) !important;
+    }
+}
+
+.trashButton {
+    background-color: $danger !important;
+    &:hover {
+        background-color: lighten($danger, 5%) !important;
+    }
+}
+
+.textInput {
+    min-width: 320px;
+    border: 2px solid $border_color;
+    padding: 10px 0;
+}
+
+.hintText {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.backgroundColorList {
+    margin: 5px;
+}
+
+.saveInput {
+    min-width: 320px;
+    padding: 3%;
+    border: 2px solid $border_color;
+}
+
+.normalBtn {
+    background-color: complement($primary_color);
+    margin: 15px;
+    margin-bottom: 5%;
+    border: none;
+    width: 90px;
+    height: 35px;
+    font-size: 16px;
+    &:hover {
+        background-color: lighten($primary_color, 5%) !important;
+    }
+}
+
+.colorText {
+    font-size: 14;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.customBackgroundColorDiv {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: $small) {
+        flex-direction: row;
+    }
+    align-items: center;
+    div {
+        position: relative;
+        width: 40px;
+        height: 42px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    input[type="color"] {
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        border: none;
+        width: 100px;
+        height: 100px;
+    }
+    @media screen and (max-width: $small) {
+        span {
+            padding-left: 4px;
+        }
+    }
+}
+
+.tooltiptext {
+    font-weight: 700;
+}

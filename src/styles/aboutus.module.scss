@@ -1,0 +1,232 @@
+$primary_color: #3D758A;
+$secondary_color: #D9D7BA;
+$tertiary_color: #D9D0D2;
+$quaternary_color:#ADCDD9;
+$quinary_color: #8C797D;
+$text_color: #000000;
+$ivory:#f1f8f0;
+$white: #fff;
+$grey: #eeeeee;
+$google-blue: #4285f4;
+$button_on_hover: lighten($primary_color, 5%);
+$button-active-blue: #BADFE7;
+$border_color: rgba(0, 0, 0, 0.274);
+$light_grey: rgba(0, 0, 0, 0.342);
+$light_shade: rgba(32, 32, 32, 0.288);
+$danger: rgb(187, 8, 8);
+.wrap {
+    background-image: url("/assets/about-us.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-color: hsl(180, 13%, 17%);
+}
+
+.wrap h1 {
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    padding-top: 200px;
+    letter-spacing: 3px;
+}
+
+.wrap p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.wrapper img {
+    background-color: $secondary-color;
+    border: solid;
+    border-color: $primary-color;
+    filter: drop-shadow(4px 4px 4px gray);
+    // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width:1150px) {
+    .wrapper img {
+        flex-direction: column;
+        align-items: center;
+        width: 360px;
+        height: 250px;
+    }
+}
+
+.card {
+    padding: 6%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        letter-spacing: 3px;
+        font-weight: 6rem;
+    }
+    p {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+}
+
+.head {
+    letter-spacing: 3px;
+    font-weight: 4rem;
+    color: $primary-color;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 100%;
+    height: 50px;
+    block-size: auto;
+    background: $primary-color;
+}
+
+.h {
+    color: $white;
+    padding-top: 20px;
+    letter-spacing: 3px;
+    font-weight: 30px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.para {
+    color: $white;
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 2;
+    padding-right: 9%;
+    padding-left: 9%;
+    padding-bottom: 80px;
+    font-size: 1.5rem;
+}
+
+.container1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.container1 h1 {
+    color: $primary-color;
+    padding-top: 10px;
+    letter-spacing: 3px;
+    font-weight: 30px;
+    text-align: center;
+}
+
+.container1 p {
+    color: black;
+    text-align: center;
+    line-height: 2;
+    padding-right: 9%;
+    padding-left: 9%;
+    padding-bottom: 9%;
+    font-size: 1.5rem;
+}
+
+.container2 {
+    padding-top: 20px;
+    text-align: center;
+    margin: 20px 40px;
+}
+
+.container2 h1 {
+    color: $primary-color;
+    padding-top: 20px;
+    letter-spacing: 3px;
+    font-weight: 30px;
+}
+
+.container2 .profiles {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 60px;
+}
+
+.profile {
+    flex-basis: 260px;
+}
+
+.profileimg {
+    padding-top: 20px;
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.profile:hover .profileimg {
+    filter: grayscale(0);
+}
+
+.username {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.profile h5 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: black;
+}
+
+@media only screen and (max-width:1150px) {
+    .profiles {
+        flex-direction: column;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cards {
+    border: black;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 60px;
+}
+
+.car {
+    margin-top: 30px;
+    background-color: $secondary-color;
+    flex-basis: 400px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards img {
+    padding-top: 9%;
+    height: 100px;
+    width: 100px;
+}
+
+@media only screen and (max-width:1150px) {
+    .cards {
+        flex-direction: column;
+    }
+    .car {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

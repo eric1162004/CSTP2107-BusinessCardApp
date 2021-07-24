@@ -1,0 +1,175 @@
+$primary_color: #3D758A;
+$secondary_color: #D9D7BA;
+$tertiary_color: #D9D0D2;
+$quaternary_color:#ADCDD9;
+$quinary_color: #8C797D;
+$text_color: #000000;
+$ivory:#f1f8f0;
+$white: #fff;
+$grey: #eeeeee;
+$google-blue: #4285f4;
+$button_on_hover: lighten($primary_color, 5%);
+$button-active-blue: #BADFE7;
+$border_color: rgba(0, 0, 0, 0.274);
+$light_grey: rgba(0, 0, 0, 0.342);
+$light_shade: rgba(32, 32, 32, 0.288);
+$danger: rgb(187, 8, 8);
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.button {
+    font-weight: 700;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary_color;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    &:hover {
+        color: $ivory;
+        background-color: #126599;
+    }
+    &:active {
+        color: $ivory;
+        background-color: #1181c8;
+        transform: translateY(3px);
+    }
+}
+
+.searchbutton {
+    background-color: $secondary_color;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        color: $ivory;
+        background-color: $secondary_color;
+    }
+    &:active {
+        color: $ivory;
+        background-color: #1181c8;
+        transform: translateY(2px);
+    }
+}
+
+.buttonContainer {
+    display: flex;
+    padding: 10px, 10px;
+}
+
+.MyOwnCardButtonShare {
+    display: inline;
+    justify-content: center;
+    width: 110px;
+    font-weight: 700;
+    color: $ivory;
+    background-color: $primary_color;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 8, 0.19);
+    &:hover {
+        color: $ivory;
+        background-color: $button_on_hover;
+    }
+    &:active {
+        color: $ivory;
+        background-color: $button-active-blue;
+        transform: translateY(3px);
+    }
+}
+
+.MyOwnCardButtonDelete {
+    display: inline;
+    justify-content: center;
+    width: 110px;
+    font-weight: 700;
+    color: $ivory;
+    background-color: $primary_color;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 8, 0.19);
+    &:hover {
+        color: $ivory;
+        background-color: $button_on_hover;
+    }
+    &:active {
+        color: $ivory;
+        background-color: $button-active-blue;
+        transform: translateY(3px);
+    }
+}
+
+.dropdownContainer {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.CardDisplay {
+    right: 50%;
+    justify-items: center;
+    align-self: center;
+}
+
+.GroupButtonDelete {
+    font-weight: 700;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    background-color: #F95F62;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    &:hover {
+        color: $ivory;
+        background-color: #E33539;
+    }
+    &:active {
+        color: $ivory;
+        background-color: #EE9FA1;
+        transform: translateY(3px);
+    }
+}
+
+.accordionButton {
+    &:after {
+        margin-right: auto !important;
+    }
+}
+
+.cen {
+    text-align: center;
+}
+
+.left {
+    text-align: start;
+}
+
+.right {
+    text-align: end;
+}
+
+.cardHead {
+    color: $secondary_color;
+    font-family: cursive;
+}
+
+.addCard {
+    position: fixed;
+    top: 85%;
+    right: 7%;
+    margin-left: 50px;
+    cursor: pointer;
+    z-index: 3;
+}
